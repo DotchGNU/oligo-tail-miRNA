@@ -1,0 +1,32 @@
+setwd("~/Desktop/R_scripts/F2L3 AGO2IP comparison/AGO1_mutants_TCGA/mutation/")
+file0 <- read.table(file="cgc_case_explorer_selected_data.csv", header = TRUE, fill = TRUE, sep =  ",")
+file1 <- read.table(file="cgc_case_explorer_selected_data (1).csv", header = TRUE, fill = TRUE, sep =  ",")
+file2 <- read.table(file="cgc_case_explorer_selected_data (2).csv", header = TRUE, fill = TRUE, sep =  ",")
+file3 <- read.table(file="cgc_case_explorer_selected_data (3).csv", header = TRUE, fill = TRUE, sep =  ",")
+file4 <- read.table(file="cgc_case_explorer_selected_data (4).csv", header = TRUE, fill = TRUE, sep =  ",")
+file5 <- read.table(file="cgc_case_explorer_selected_data (5).csv", header = TRUE, fill = TRUE, sep =  ",")
+file6 <- read.table(file="cgc_case_explorer_selected_data (6).csv", header = TRUE, fill = TRUE, sep =  ",")
+file7 <- read.table(file="cgc_case_explorer_selected_data (7).csv", header = TRUE, fill = TRUE, sep =  ",")
+file8 <- read.table(file="cgc_case_explorer_selected_data (8).csv", header = TRUE, fill = TRUE, sep =  ",")
+file9 <- read.table(file="cgc_case_explorer_selected_data (9).csv", header = TRUE, fill = TRUE, sep =  ",")
+file10 <- read.table(file="cgc_case_explorer_selected_data (10).csv", header = TRUE, fill = TRUE, sep =  ",")
+file11 <- read.table(file="cgc_case_explorer_selected_data (11).csv", header = TRUE, fill = TRUE, sep =  ",")
+file12 <- read.table(file="cgc_case_explorer_selected_data (12).csv", header = TRUE, fill = TRUE, sep =  ",")
+file13 <- read.table(file="cgc_case_explorer_selected_data (13).csv", header = TRUE, fill = TRUE, sep =  ",")
+file14 <- read.table(file="cgc_case_explorer_selected_data (14).csv", header = TRUE, fill = TRUE, sep =  ",")
+file15 <- read.table(file="cgc_case_explorer_selected_data (15).csv", header = TRUE, fill = TRUE, sep =  ",")
+file16 <- read.table(file="cgc_case_explorer_selected_data (16).csv", header = TRUE, fill = TRUE, sep =  ",")
+file17 <- read.table(file="cgc_case_explorer_selected_data (17).csv", header = TRUE, fill = TRUE, sep =  ",")
+file18 <- read.table(file="cgc_case_explorer_selected_data (18).csv", header = TRUE, fill = TRUE, sep =  ",")
+file19 <- read.table(file="cgc_case_explorer_selected_data (19).csv", header = TRUE, fill = TRUE, sep =  ",")
+
+file_all <- rbind(file0,file1,file2,file3,file4,file5,file6,file7,file8,file9,file10,file11,file12,file13,file14,file15,file16,file17,file18,file19)
+rm(file0,file1,file2,file3,file4,file5,file6,file7,file8,file9,file10,file11,file12,file13,file14,file15,file16,file17,file18)
+mutation_file <- file_all[,c(1,7)]
+colnames(mutation_file) <- c("case_uuid","Variant.Classification")
+manifest_data <- read.table(file="1557338672167-manifest.csv", header = TRUE, fill = TRUE, sep =  ",")
+
+missing_dataset <- manifest_data[ !(manifest_data$case_uuid %in% mutation_file$case_uuid), ]
+missing_dataset2 <- mutation_file[ !(mutation_file$case_uuid %in% manifest_data$case_uuid), ]
+manifest_data2 <- merge(manifest_data, mutation_file, by="case_uuid")
+write.table(manifest_data2, "manifest_all_AGO1_mutants_TCGA.txt", sep="\t", row.names = FALSE, append = FALSE)
