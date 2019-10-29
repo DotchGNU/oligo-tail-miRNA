@@ -6,7 +6,7 @@ Description of the methods and R scripts used to analyze miRNA isoforms trimming
 The small RNA sequencing data were analyzed using an in-house pipeline. Briefly, adaptors were removed, reads were mapped using Bowtie and visualized using IGV. More detailed study of the isomiR profile was done using [QuagmiR](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#references). This software uses a unique algorithm to pull specific reads and aligns them against a consensus sequence in the middle of a miRNA, allowing mismatches on the ends to capture 3’ isomiRs. The reports included tabulated analysis of miRNA expression, length, number of nucleotides trimmed and tail composition at individual read level. Customized R scripts were used to calculate percentages of canonical miRNA (defined as the most abundant templated read) and 3’ isomiRs, a well as percentages of tailing and trimming. Long tail composition was calculated by counting the number of non-templated nucleotides present in the tail of each isomiR read. Reads with equal number of non-templated nucleotides in the tail were added together and cumulative distribution was calculated for all the oligo-tailed isomiRs going from ones with longer to shorter tails.
 
   * [Long tail composition scripts](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/Long%20Tail%20Composition)
-  * [Descriptive example of the analysis performed](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#descriptive-example-of-the-analysis-performed)
+  * [Descriptive examples of the analysis performed](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#descriptive-example-of-the-analysis-performed)
 
 ## **Analysis of isomiR profiles on AGO1 and AGO2 from TCGA:**
 
@@ -34,7 +34,7 @@ UGGAAGACUAGUGAUUUUGUUGUU
 
 **Minimum number of "N" nucleotide in tail**
 ```
-Example long tailed read
+Example long tailed read:
 <--templated-----------><--non-templated-->
 UGGAAGACUAGUGAUUUUGUUGUUUUUUUUUAAUUUUGUCUUU
 ........................UUUUUUUAAUUUUGUCUUU
@@ -43,6 +43,20 @@ Number of U in tail: 15
 Number of A in tail: 2
 Number of G in tail: 1
 Number of C in tail: 1
+```
+
+**Weighted Average of the Minimum number of U in oligo-tail**
+```
+Example long tailed reads:
+<--templated-----------><--non-templated-->  U_in_tail  Counts  Fraction  Weighted_U_in_tail
+UGGAAGACUAGUGAUUUUGUUGUU                     
+........................UUUUUUUAAUUUUGUCUUU  15         100     0.2       3
+........................UUUAUUU              6          100     0.2       1.2
+........................UUUUUUU              7          100     0.2       1.4
+........................UUU                  3          100     0.2       0.6
+........................UU                   2          100     0.2       0.4
+
+Weighted Average of the Minimum number of U in oligo-tail: 6.6
 ```
 
 ## **References:**
