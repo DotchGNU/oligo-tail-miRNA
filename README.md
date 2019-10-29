@@ -26,6 +26,8 @@ Selected Case ID were: P295L TCGA-53-A4EZ, R315M TCGA-HU-A4G8 and E299K TCGA-Z6-
 
 ## **Descriptive example of the analysis performed**
 
+*The examples shown here are just to illustrate the logic implemented in the analysis and calculations used in the R scripts*
+
 **miRBase reference**
 ```
 >hsa-miR-7-5p MIMAT0000252
