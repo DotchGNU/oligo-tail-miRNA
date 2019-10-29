@@ -1,6 +1,13 @@
 # miRNA trimming and oligo-tailing analysis
 R scripts used to analyze miRNA isoforms trimming and tailing (as well as nucleotide composition of non-templated tails).
 
+* Analysis of TCGA mutants:
+  ** AGO2
+  ** AGO1
+* Analysis of long tail composition:
+  ** Long tail composition
+  ** Descriptive example of the analysis performed
+
 ### Minimum number of "N" nucleotide in tail
 
 **miRBase reference**
