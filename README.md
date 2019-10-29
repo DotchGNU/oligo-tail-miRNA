@@ -5,8 +5,8 @@ Description of the methods and R scripts used to analyze miRNA isoforms trimming
 
 The small RNA sequencing data were analyzed using an in-house pipeline. Briefly, adaptors were removed, reads were mapped using Bowtie and visualized using IGV. More detailed study of the isomiR profile was done using [QuagmiR](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#references). This software uses a unique algorithm to pull specific reads and aligns them against a consensus sequence in the middle of a miRNA, allowing mismatches on the ends to capture 3’ isomiRs. The reports included tabulated analysis of miRNA expression, length, number of nucleotides trimmed and tail composition at individual read level. Customized R scripts were used to calculate percentages of canonical miRNA (defined as the most abundant templated read) and 3’ isomiRs, a well as percentages of tailing and trimming. Long tail composition was calculated by counting the number of non-templated nucleotides present in the tail of each isomiR read. Reads with equal number of non-templated nucleotides in the tail were added together and cumulative distribution was calculated for all the oligo-tailed isomiRs going from ones with longer to shorter tails.
 
-  * [Long tail composition](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/Long%20Tail%20Composition)
-  * [Descriptive example of the analysis performed](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#minimum-number-of-n-nucleotide-in-tail)
+  * [Long tail composition scripts](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/Long%20Tail%20Composition)
+  * [Descriptive example of the analysis performed](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#descriptive-example-of-the-analysis-performed)
 
 ## **Analysis of isomiR profiles on AGO1 and AGO2 from TCGA:**
 
