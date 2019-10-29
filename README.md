@@ -3,6 +3,7 @@ R scripts used to analyze miRNA isoforms trimming and tailing (as well as nucleo
 
 ### Minimum number of "X" nt in tail
 
-```>hsa-miR-7-5p MIMAT0000252
+```
+>hsa-miR-7-5p MIMAT0000252
 UGGAAGACUAGUGAUUUUGUUGUU
 ```
