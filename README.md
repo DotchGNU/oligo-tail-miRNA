@@ -14,11 +14,11 @@ Tumoral samples from TCGA bearing genomic mutations in either AGO1 or AGO2 leadi
 
 Selected Case ID were: P295L TCGA-53-A4EZ, R315M TCGA-HU-A4G8 and E299K TCGA-Z6-A8JE (AGO2), F310L TCGA-94-7033 (AGO1). The analysis of selected patient samples was also performed using QuagmiR56, with a previous conversion of the bam files to fastq files by Picard Sam-to-Fastq, using Amazon cloud instances through the Seven Bridges Genomics implementation of the NCI Cancer Genomics Cloud. Mutations were plotted into the PDB structures of AGO1 and AGO2 using pymol.
 
-  * [AGO2](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/AGO2%20mutants)
+  * AGO2
     * [GDC Portal AGO2 missense mutations](https://portal.gdc.cancer.gov/exploration?facetTab=mutations&filters=%7B%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22genes.gene_id%22%2C%22value%22%3A%5B%22ENSG00000123908%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22ssms.consequence.transcript.consequence_type%22%2C%22value%22%3A%5B%22missense_variant%22%5D%7D%7D%5D%2C%22op%22%3A%22and%22%7D&searchTableTab=mutations)
     * [AGO2 scripts](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/AGO2%20mutants)
     
-  * [AGO1](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/AGO1%20mutants)
+  * AGO1
     * [GDC Portal AGO1 missense mutations](https://portal.gdc.cancer.gov/exploration?facetTab=mutations&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22genes.gene_id%22%2C%22value%22%3A%5B%22ENSG00000092847%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22ssms.consequence.transcript.consequence_type%22%2C%22value%22%3A%5B%22missense_variant%22%5D%7D%7D%5D%7D&searchTableTab=mutations)
     * [AGO1 scripts](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/AGO1%20mutants)
 
