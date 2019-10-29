@@ -14,4 +14,9 @@ UGGAAGACUAGUGAUUUUGUUGUU
 <--templated-----------><--non-templated-->
 UGGAAGACUAGUGAUUUUGUUGUUUUUUUUUAAUUUUGUCUUU
 ........................UUUUUUUAAUUUUGUCUUU
+
+Number of U in tail: 15
+Number of A in tail: 2
+Number of G in tail: 1
+Number of C in tail: 1
 ```
