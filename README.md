@@ -13,4 +13,5 @@ UGGAAGACUAGUGAUUUUGUUGUU
 ```
 <--templated-----------><--non-templated-->
 UGGAAGACUAGUGAUUUUGUUGUUUUUUUUUAAUUUUGUCUUU
+........................UUUUUUUAAUUUUGUCUUU
 ```
