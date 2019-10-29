@@ -24,7 +24,7 @@ Selected Case ID were: P295L TCGA-53-A4EZ, R315M TCGA-HU-A4G8 and E299K TCGA-Z6-
 
 
 
-## **Minimum number of "N" nucleotide in tail**
+## **Descriptive example of the analysis performed**
 
 **miRBase reference**
 ```
@@ -32,8 +32,9 @@ Selected Case ID were: P295L TCGA-53-A4EZ, R315M TCGA-HU-A4G8 and E299K TCGA-Z6-
 UGGAAGACUAGUGAUUUUGUUGUU
 ```
 
-**Example long tailed read**
+**Minimum number of "N" nucleotide in tail**
 ```
+Example long tailed read
 <--templated-----------><--non-templated-->
 UGGAAGACUAGUGAUUUUGUUGUUUUUUUUUAAUUUUGUCUUU
 ........................UUUUUUUAAUUUUGUCUUU
