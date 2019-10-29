@@ -9,8 +9,8 @@ R scripts used to analyze miRNA isoforms trimming and tailing (as well as nucleo
 UGGAAGACUAGUGAUUUUGUUGUU
 ```
 
-**Long tailed read**
+**Example long tailed read**
 ```
-<--templated-----------><-non-templated>
-UGGAAGACUAGUGAUUUUGUUGUUUUUUUUUAUUUUGUUU
+<--templated-----------><--non-templated-->
+UGGAAGACUAGUGAUUUUGUUGUUUUUUUUUAAUUUUGUCUUU
 ```
