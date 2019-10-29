@@ -26,13 +26,26 @@ Selected Case ID were: P295L TCGA-53-A4EZ, R315M TCGA-HU-A4G8 and E299K TCGA-Z6-
 
 ## **Descriptive example of the analysis performed**
 
-*The examples shown here are just to illustrate the logic implemented in the analysis and calculations used in the R scripts*
+*The examples shown here are just to illustrate the logic implemented in the analysis and calculations used in the R scripts.*
 
 **miRBase reference**
 ```
->hsa-miR-7-5p MIMAT0000252
+>hsa-miR-7-5p MIMAT0000252 (mature miRNA)
 UGGAAGACUAGUGAUUUUGUUGUU
+
+>hsa-mir-7-1 MI0000263 (pri-miRNA paralog 1)
+<--mature-miRNA--------><---------templated (genomic reference)---------------------->
+UGGAAGACUAGUGAUUUUGUUGUUUUUAGAUAACUAAAUCGACAACAAAUCACAGUCUGCCAUAUGGCACAGGCCAUGCCUCUACAG
+
+>hsa-mir-7-2 MI0000264 (pri-miRNA paralog 2)
+<--mature-miRNA--------><---------templated (genomic reference)--------------->
+UGGAAGACUAGUGAUUUUGUUGUUGUCUUACUGCGCUCAACAACAAAUCCCAGUCUACCUAAUGGUGCCAGCCAUCGCA
+
+>hsa-mir-7-3 MI0000265 (pri-miRNA paralog 3)
+<--mature-miRNA--------><---------templated (genomic reference)---------------->
+UGGAAGACUAGUGAUUUUGUUGUUCUGAUGUACUACGACAACAAGUCACAGCCGGCCUCAUAGCGCAGACUCCCUUCGAC
 ```
+
 
 **Minimum number of "N" nucleotide in tail**
 ```
