@@ -2,11 +2,11 @@
 R scripts used to analyze miRNA isoforms trimming and tailing (as well as nucleotide composition of non-templated tails).
 
 * Analysis of TCGA mutants:
-  * AGO2
-  * AGO1
+  * [AGO2](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/AGO2%20mutants)
+  * [AGO1](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/AGO1%20mutants)
 * Analysis of long tail composition:
-  * Long tail composition
-  * Descriptive example of the analysis performed
+  * [Long tail composition](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/Long%20Tail%20Composition)
+  * [Descriptive example of the analysis performed](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#minimum-number-of-n-nucleotide-in-tail)
 
 ### Minimum number of "N" nucleotide in tail
 
