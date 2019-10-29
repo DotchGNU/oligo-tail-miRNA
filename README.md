@@ -4,7 +4,7 @@ R scripts used to analyze miRNA isoforms trimming and tailing (as well as nucleo
 * **Analysis of TCGA mutants:**
   * [AGO2](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/AGO2%20mutants)
   * [AGO1](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/AGO1%20mutants)
-   * [GDC Portal AGO1 missense mutations](https://portal.gdc.cancer.gov/exploration?facetTab=mutations&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22genes.gene_id%22%2C%22value%22%3A%5B%22ENSG00000092847%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22ssms.consequence.transcript.consequence_type%22%2C%22value%22%3A%5B%22missense_variant%22%5D%7D%7D%5D%7D&searchTableTab=mutations)
+    * [GDC Portal AGO1 missense mutations](https://portal.gdc.cancer.gov/exploration?facetTab=mutations&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22genes.gene_id%22%2C%22value%22%3A%5B%22ENSG00000092847%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22ssms.consequence.transcript.consequence_type%22%2C%22value%22%3A%5B%22missense_variant%22%5D%7D%7D%5D%7D&searchTableTab=mutations)
 * **Analysis of long tail composition:**
   * [Long tail composition](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA/tree/master/Long%20Tail%20Composition)
   * [Descriptive example of the analysis performed](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#minimum-number-of-n-nucleotide-in-tail)
