@@ -23,6 +23,9 @@ All the cloud computing tools can be found in the [Cancer Genomics Cloud (CGC)](
 The Cancer Genomics Cloud (CGC), powered by Seven Bridges, is one of three systems funded by the National Cancer Institute to explore the paradigm of colocalizing massive public datasets, like The Cancer Genomics Atlas (TCGA), alongside secure and scalable computational resources to analyze them.
 
 * [QuagmiR](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#references)
+* [Picard Sam-to-Fastq](https://software.broadinstitute.org/gatk/documentation/tooldocs/4.0.3.0/picard_sam_SamToFastq.php)
+
+“The Seven Bridges Cancer Genomics Cloud has been funded in whole or in part with Federal funds from the National Cancer Institute, National Institutes of Health, Contract No. HHSN261201400008C and ID/IQ Agreement No. 17X146 under Contract No. HHSN261201500003I.”
 
 ## **Analysis of miRNA sequencing data and tail composition:**
 
@@ -98,5 +101,7 @@ Weighted Average of the Minimum number of U in oligo-tail: 6.6
 ```
 
 ## **References:**
-* [QuagmiR: A Cloud-based Application for IsomiR Big Data Analytics.](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty843/5123434)
-Bofill-De Ros X, Chen K, Chen S, Tesic N, Randjelovic D, Skundric N, Nesic S, Varjacic V, Williams EH, Malhotra R, Jiang M, Gu S. Bioinformatics. 2018 Oct 8. doi: 10.1093/bioinformatics/bty843.([Pubmed link](https://www.ncbi.nlm.nih.gov/pubmed/30295744))
+* [QuagmiR: A Cloud-based Application for IsomiR Big Data Analytics.](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty843/5123434)Bofill-De Ros X, Chen K, Chen S, Tesic N, Randjelovic D, Skundric N, Nesic S, Varjacic V, Williams EH, Malhotra R, Jiang M, Gu S. Bioinformatics. 2018 Oct 8. doi: 10.1093/bioinformatics/bty843.([Pubmed link](https://www.ncbi.nlm.nih.gov/pubmed/30295744))
+* [The Cancer Genomics Cloud: Collaborative, Reproducible, and Democratized—A New Paradigm in Large-Scale Computational Research.](https://cancerres.aacrjournals.org/content/77/21/e3.long) Lau JW, Lehnert E, Sethi A, Malhotra R, Kaushik G, Onder Z, Groves-Kirkby N, Mihajlovic A, DiGiovanna J, Srdic M, Bajcic D, Radenkovic J, Mladenovic V, Krstanovic D, Arsenijevic V, Klisic D, Mitrovic M, Bogicevic I, Kural D, Davis-Dusenbery B; Seven Bridges CGC Team. The Cancer Genomics Cloud:
+Collaborative, Reproducible, and Democratized-A New Paradigm in Large-Scale
+Computational Research. Cancer Res. 2017 Nov 1;77(21)([Pubmed link](https://www.ncbi.nlm.nih.gov/pubmed/29092927))
