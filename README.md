@@ -5,6 +5,15 @@ Description of the methods and R scripts used to analyze miRNA isoforms trimming
 [GEO accession GSE139567](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139567)
 Currently only available under reviewer's token (10/29/2019)
 
+## **System requirements**
+This code was tested under:
+* MacBook Pro (15-inch, 2016)
+* Processor: 2.7 GHz Intel Core i7
+* Memory: 16 GB 2133 MHz LPDDR3
+
+**R and RStudio**
+Version 1.1.456 – © 2009-2018 RStudio, Inc.
+
 ## **Analysis of miRNA sequencing data and tail composition:**
 
 The small RNA sequencing data were analyzed using an in-house pipeline. Briefly, adaptors were removed, reads were mapped using Bowtie and visualized using IGV. More detailed study of the isomiR profile was done using [QuagmiR](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#references). This software uses a unique algorithm to pull specific reads and aligns them against a consensus sequence in the middle of a miRNA, allowing mismatches on the ends to capture 3’ isomiRs. The reports included tabulated analysis of miRNA expression, length, number of nucleotides trimmed and tail composition at individual read level. Customized R scripts were used to calculate percentages of canonical miRNA (defined as the most abundant templated read) and 3’ isomiRs, a well as percentages of tailing and trimming. Long tail composition was calculated by counting the number of non-templated nucleotides present in the tail of each isomiR read. Reads with equal number of non-templated nucleotides in the tail were added together and cumulative distribution was calculated for all the oligo-tailed isomiRs going from ones with longer to shorter tails.
