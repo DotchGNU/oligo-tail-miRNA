@@ -4,7 +4,7 @@ Description of the methods and R scripts used to analyze miRNA isoforms trimming
 ## **Dataset availability**
 * [GEO accession GSE139567](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139567)
   * Currently only available under reviewer's token (10/29/2019)
-* The Cancer Genome Atlas (TCGA) miRNA-seq datasets used used to analyze the impact of tumor mutations can be retrieved under dbGAP license (phs000178).
+* The Cancer Genome Atlas (TCGA) miRNA-seq datasets used used to analyze the impact of tumor mutations can be retrieved under dbGAP license ([phs000178](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000178.v10.p8)).
 
 ## **System requirements**
 This code was tested under:
