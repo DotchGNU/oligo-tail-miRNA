@@ -12,9 +12,9 @@ This code was tested under:
 * Memory: 16 GB 2133 MHz LPDDR3
 
 **R and RStudio**
-R version 3.5.1 (2018-07-02)
+* R version 3.5.1 (2018-07-02)
   * [Download and installation](https://www.r-project.org/)
-RStudio version 1.1.456 – © 2009-2018
+* RStudio version 1.1.456 – © 2009-2018
   * [Download and installation](https://rstudio.com/)
 
 ## **Analysis of miRNA sequencing data and tail composition:**
