@@ -3,7 +3,7 @@ Description of the methods and R scripts used to analyze miRNA isoforms trimming
 
 ## **Dataset availability**
 [GEO accession GSE139567](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE139567)
-Currently only available under reviewer's token (10/29/2019)
+* Currently only available under reviewer's token (10/29/2019)
 
 ## **System requirements**
 This code was tested under:
@@ -16,6 +16,13 @@ This code was tested under:
   * [Download and installation](https://www.r-project.org/)
 * RStudio version 1.1.456 – © 2009-2018
   * [Download and installation](https://rstudio.com/)
+
+**Cloud computing tools**
+All the cloud computing tools can be found in the [Cancer Genomics Cloud (CGC)](www.cancergenomicscloud.org).
+
+The Cancer Genomics Cloud (CGC), powered by Seven Bridges, is one of three systems funded by the National Cancer Institute to explore the paradigm of colocalizing massive public datasets, like The Cancer Genomics Atlas (TCGA), alongside secure and scalable computational resources to analyze them.
+
+* [QuagmiR](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#references)
 
 ## **Analysis of miRNA sequencing data and tail composition:**
 
