@@ -11,13 +11,13 @@ This code was tested under:
 * Processor: 2.7 GHz Intel Core i7
 * Memory: 16 GB 2133 MHz LPDDR3
 
-**R and RStudio**
+### **R and RStudio**
 * R version 3.5.1 (2018-07-02)
   * [Download and installation](https://www.r-project.org/)
 * RStudio version 1.1.456 – © 2009-2018
   * [Download and installation](https://rstudio.com/)
 
-**Cloud computing tools**
+### **Cloud computing tools**
 All the cloud computing tools can be found in the [Cancer Genomics Cloud (CGC)](www.cancergenomicscloud.org).
 
 The Cancer Genomics Cloud (CGC), powered by Seven Bridges, is one of three systems funded by the National Cancer Institute to explore the paradigm of colocalizing massive public datasets, like The Cancer Genomics Atlas (TCGA), alongside secure and scalable computational resources to analyze them.
