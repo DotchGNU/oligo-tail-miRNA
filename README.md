@@ -35,8 +35,7 @@ The Cancer Genomics Cloud (CGC), powered by Seven Bridges, is one of three syste
 
 The small RNA sequencing data were analyzed using an in-house pipeline. Briefly, adaptors were removed, reads were mapped using Bowtie and visualized using [IGV](https://software.broadinstitute.org/software/igv/download). More detailed study of the isomiR profile was done using [QuagmiR](https://github.com/Gu-Lab-RBL-NCI/oligo-tail-miRNA#references). This software uses a unique algorithm to pull specific reads and aligns them against a consensus sequence in the middle of a miRNA, allowing mismatches on the ends to capture 3’ isomiRs. The reports included tabulated analysis of miRNA expression, length, number of nucleotides trimmed and tail composition at individual read level. 
 
-In this particular manuscript, QuagmiR Levenshtein distances for the 5' and 3' segments were set to 2 and -1(no restriction). This setting allowed a high stringency on indetifying the miRNA, while leaving the 3' end of the miRNA unrestrained to detect any trimming and/or tailing event.  
-
+In this manuscript, QuagmiR's parameter "Levenshtein or edit distances" for the 5' and 3' segments were set to 2 and -1 (no restriction), respectively. This particular setting allowed a high stringency on indetifying the miRNA, while leaving the 3' end of the miRNA unrestrained to detect any trimming and/or tailing event.  
 
 Customized R scripts were used to calculate percentages of canonical miRNA (defined as the most abundant templated read) and 3’ isomiRs, a well as percentages of tailing and trimming. Long tail composition was calculated by counting the number of non-templated nucleotides present in the tail of each isomiR read. Reads with equal number of non-templated nucleotides in the tail were added together and cumulative distribution was calculated for all the oligo-tailed isomiRs going from ones with longer to shorter tails.
 
