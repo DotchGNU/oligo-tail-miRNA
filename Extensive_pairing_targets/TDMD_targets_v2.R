@@ -4,14 +4,13 @@ human_UTR <- read.table(file="human_3UTR_v2.txt", header = FALSE, fill = TRUE, s
 colnames(human_UTR) <- c("SYMBOL","UTR")
 human_UTR$UTR <- toupper(human_UTR$UTR)
 
-#mir7 <- "UGGAAGACUAGUGAUUUUGUUGUU"
+mir7 <- "UGGAAGACUAGUGAUUUUGUUGUU"
 #mir21 <- "UAGCUUAUCAGACUGAUGUUGA"
 #mir769 <- "UGAGACCUCUGGGUUCUGAGCU"
 #mir222 <- "AGCUACAUCUGGCUACUGGGU"
-mir92a <- "UAUUGCACUUGUCCCGGCCUGU"
 #mir10a <- "UACCCUGUAGAUCCGAAUUUGUG"
 #mir148a <- "UCAGUGCACUACAGAACUUUGU"
-miRNA <- mir92a
+miRNA <- mir7
 miRNA <- gsub("U", "T", miRNA)
 
 library(seqinr)
@@ -62,14 +61,11 @@ targets <- unique(targets)
 hist(targets$Nsites)
 hist(targets$energy)
 
-write.table(x = targets, file = "mir_148a_7mer.tsv",row.names = F,col.names = T, sep = "\t")
-#targets <- read.table("mir_769_no_mer.tsv", header = TRUE)
+write.table(x = targets, file = "mir_7_7mer.tsv",row.names = F,col.names = T, sep = "\t")
+#targets <- read.table("mir_7_7mer.tsv", header = TRUE)
 breaks <-  seq(-40, 10, by=0.5)
 energy_dist = c(0,table(cut(targets$energy, breaks, right=FALSE))/nrow(targets)*100)
 plot(breaks, energy_dist, type="n", xlab = "Dependency Score", ylab = "Distribution", ylim=c(0,15), xlim=c(-40,10))
 lines(breaks, energy_dist)
 final_dist <- rbind(breaks,energy_dist)
-#write.table(x = final_dist, file = "mir_769_no_mer_dist.tsv",row.names = F,col.names = T, sep = "\t")
-
-target_specific <- mer7[which(mer7$SYMBOL=="METTL8"),2]
-getDuplexEnergy(mir92a,target_specific)
+#write.table(x = final_dist, file = "mir_7_no_mer_dist.tsv",row.names = F,col.names = T, sep = "\t")
