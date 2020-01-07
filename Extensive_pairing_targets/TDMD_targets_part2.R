@@ -48,12 +48,6 @@ miR21_FPKM <- miR21_FPKM[which(miR21_FPKM$x>0),]
 plot(log10(miR21_FPKM$x), miR21_FPKM$energy*-1)
 write.table(x = miR21_FPKM, file = "mi21_FPKM_TDMD_targets.tsv",row.names = F,col.names = T, sep = "\t")
 
-miR92 <- read.table(file="mir_92a_7mer.tsv", header = T, fill = TRUE, sep =  "\t")
-miR92_FPKM <- merge(miR92,HEK293T, by="SYMBOL")
-miR92_FPKM <- miR92_FPKM[which(miR92_FPKM$x>0),]
-plot(log10(miR92_FPKM$x), miR92_FPKM$energy*-1)
-write.table(x = miR92_FPKM, file = "mi92_FPKM_TDMD_targets.tsv",row.names = F,col.names = T, sep = "\t")
-
 miR10a <- read.table(file="mir_10a_7mer.tsv", header = T, fill = TRUE, sep =  "\t")
 miR10a_FPKM <- merge(miR10a,HEK293T, by="SYMBOL")
 miR10a_FPKM <- miR10a_FPKM[which(miR10a_FPKM$x>0),]
