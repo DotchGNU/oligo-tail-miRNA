@@ -111,9 +111,9 @@ Weighted Average of the Minimum number of U in oligo-tail: 6.6
 ## **Bioinformatic identification of RNAs with extensive pairing with miRNAs:**
 
 The bioinformatic prediction of target RNAs with extensive 3' pairing with miRNAs that could induce the dislocation of the 3' end of the miRNAs from the PAZ domain, and therefore induce trimming-tailing decay was done following this algorithm:
-1.- RNAs with a 7mer seed were selected from [TargetScan7.2 list of human 3'UTRs](http://www.targetscan.org/vert_72/).
-2.- RNAduplex from the [ViennaRNA Package 2.0](https://www.tbi.univie.ac.at/RNA/RNAduplex.1.html) was used to calculate the minimum free energy (MFE) of hybridization between each miRNA and target RNA.
-3.- MFE for each miRNA-RNA hybrid was plotted against the abundance of the target RNA in HEK293 cells, as previously reported by [Yang et al. Mol Cell (2019)](https://www.cell.com/molecular-cell/pdfExtended/S1097-2765(19)30386-7), data available at [GEO:GSE121327](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3431500).   
+1. RNAs with a 7mer seed were selected from [TargetScan7.2 list of human 3'UTRs](http://www.targetscan.org/vert_72/).
+2. RNAduplex from the [ViennaRNA Package 2.0](https://www.tbi.univie.ac.at/RNA/RNAduplex.1.html) was used to calculate the minimum free energy (MFE) of hybridization between each miRNA and target RNA.
+3. MFE for each miRNA-RNA hybrid was plotted against the abundance of the target RNA in HEK293 cells, as previously reported by [Yang et al. Mol Cell (2019)](https://www.cell.com/molecular-cell/pdfExtended/S1097-2765(19)30386-7), data available at [GEO:GSE121327](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3431500).   
 
 ## **References:**
 * [QuagmiR: A Cloud-based Application for IsomiR Big Data Analytics.](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty843/5123434)Bofill-De Ros X, Chen K, Chen S, Tesic N, Randjelovic D, Skundric N, Nesic S, Varjacic V, Williams EH, Malhotra R, Jiang M, Gu S. Bioinformatics. 2018 Oct 8. doi: 10.1093/bioinformatics/bty843.([Pubmed link](https://www.ncbi.nlm.nih.gov/pubmed/30295744))
